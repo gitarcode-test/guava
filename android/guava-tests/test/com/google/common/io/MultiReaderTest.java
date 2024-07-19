@@ -23,7 +23,9 @@ import java.io.Reader;
 import java.io.StringReader;
 import junit.framework.TestCase;
 
-/** @author ricebin */
+/**
+ * @author ricebin
+ */
 public class MultiReaderTest extends TestCase {
 
   public void testOnlyOneOpen() throws Exception {

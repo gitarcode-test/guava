@@ -132,9 +132,7 @@ class CompactHashSet<E extends @Nullable Object> extends AbstractSet<E> implemen
    * Maximum allowed false positive probability of detecting a hash flooding attack given random
    * input.
    */
-  @VisibleForTesting(
-      )
-  static final double HASH_FLOODING_FPP = 0.001;
+  @VisibleForTesting() static final double HASH_FLOODING_FPP = 0.001;
 
   /**
    * Maximum allowed length of a hash table bucket before falling back to a j.u.LinkedHashSet based

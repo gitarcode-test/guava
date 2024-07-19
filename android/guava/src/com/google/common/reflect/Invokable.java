@@ -275,8 +275,7 @@ public abstract class Invokable<T, R> implements AnnotatedElement, Member {
   public final ImmutableList<Parameter> getParameters() {
     Type[] parameterTypes = getGenericParameterTypes();
     Annotation[][] annotations = getParameterAnnotations();
-    @Nullable Object[] annotatedTypes =
-        new Object[parameterTypes.length];
+    @Nullable Object[] annotatedTypes = new Object[parameterTypes.length];
     ImmutableList.Builder<Parameter> builder = ImmutableList.builder();
     for (int i = 0; i < parameterTypes.length; i++) {
       builder.add(

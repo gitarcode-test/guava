@@ -170,7 +170,6 @@ public class ClassPathTest extends TestCase {
         .isEqualTo(new File("/C:\\\u20320 \u22909"));
   }
 
-
   @AndroidIncompatible // Android forbids null parent ClassLoader
   // https://github.com/google/guava/issues/2152
   public void testJarFileWithSpaces() throws Exception {
@@ -180,7 +179,6 @@ public class ClassPathTest extends TestCase {
   }
 
   @AndroidIncompatible // ClassPath is documented as not supporting Android
-
   public void testScan_classPathCycle() throws IOException {
     File jarFile = File.createTempFile("with_circular_class_path", ".jar");
     try {
@@ -194,7 +192,6 @@ public class ClassPathTest extends TestCase {
     }
   }
 
-
   public void testScanFromFile_fileNotExists() throws IOException {
     ClassLoader classLoader = ClassPathTest.class.getClassLoader();
     assertThat(
@@ -204,7 +201,6 @@ public class ClassPathTest extends TestCase {
   }
 
   @AndroidIncompatible // ClassPath is documented as not supporting Android
-
   public void testScanFromFile_notJarFile() throws IOException {
     ClassLoader classLoader = ClassPathTest.class.getClassLoader();
     File notJar = File.createTempFile("not_a_jar", "txt");
@@ -366,7 +362,6 @@ public class ClassPathTest extends TestCase {
 
   // Test that ResourceInfo.urls() returns identical content to ClassLoader.getResources()
 
-
   @AndroidIncompatible
   public void testGetClassPathUrls() throws Exception {
     if (isWindows()) {
@@ -411,7 +406,6 @@ public class ClassPathTest extends TestCase {
 
   private static class Nested {}
 
-
   public void testNulls() throws IOException {
     new NullPointerTester().testAllPublicStaticMethods(ClassPath.class);
     new NullPointerTester()
@@ -419,7 +413,6 @@ public class ClassPathTest extends TestCase {
   }
 
   @AndroidIncompatible // ClassPath is documented as not supporting Android
-
   public void testLocationsFrom_idempotentScan() throws IOException {
     ImmutableSet<ClassPath.LocationInfo> locations =
         ClassPath.locationsFrom(getClass().getClassLoader());
@@ -450,12 +443,10 @@ public class ClassPathTest extends TestCase {
   }
 
   @AndroidIncompatible // ClassPath is documented as not supporting Android
-
   public void testScanAllResources() throws IOException {
     assertThat(scanResourceNames(ClassLoader.getSystemClassLoader()))
         .contains("com/google/common/reflect/ClassPathTest.class");
   }
-
 
   public void testExistsThrowsSecurityException() throws IOException, URISyntaxException {
     SecurityManager oldSecurityManager = System.getSecurityManager();
