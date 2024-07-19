@@ -31,7 +31,6 @@ import java.util.TreeSet;
  * Provides supporting data for performance notes in the documentation of {@link
  * Ordering#sortedCopy} and {@link Ordering#immutableSortedCopy}, as well as for automated code
  * suggestions.
- *
  */
 public class SortedCopyBenchmark {
   @Param({"1", "10", "1000", "1000000"})

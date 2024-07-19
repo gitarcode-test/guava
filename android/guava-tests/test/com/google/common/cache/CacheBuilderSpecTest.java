@@ -27,8 +27,7 @@ import java.util.concurrent.TimeUnit;
 import junit.framework.TestCase;
 
 /**
- * Tests CacheBuilderSpec. TODO(user): tests of a few invalid input conditions, boundary
- * conditions.
+ * Tests CacheBuilderSpec. TODO(user): tests of a few invalid input conditions, boundary conditions.
  *
  * @author Adam Winer
  */

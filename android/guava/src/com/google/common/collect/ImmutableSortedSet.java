@@ -582,7 +582,9 @@ public abstract class ImmutableSortedSet<E> extends ImmutableSet<E>
     return headSet(toElement, false);
   }
 
-  /** @since 12.0 */
+  /**
+   * @since 12.0
+   */
   @Override
   public ImmutableSortedSet<E> headSet(E toElement, boolean inclusive) {
     return headSetImpl(checkNotNull(toElement), inclusive);
@@ -605,7 +607,9 @@ public abstract class ImmutableSortedSet<E> extends ImmutableSet<E>
     return subSet(fromElement, true, toElement, false);
   }
 
-  /** @since 12.0 */
+  /**
+   * @since 12.0
+   */
   @GwtIncompatible // NavigableSet
   @Override
   public ImmutableSortedSet<E> subSet(
@@ -631,7 +635,9 @@ public abstract class ImmutableSortedSet<E> extends ImmutableSet<E>
     return tailSet(fromElement, true);
   }
 
-  /** @since 12.0 */
+  /**
+   * @since 12.0
+   */
   @Override
   public ImmutableSortedSet<E> tailSet(E fromElement, boolean inclusive) {
     return tailSetImpl(checkNotNull(fromElement), inclusive);
@@ -648,7 +654,9 @@ public abstract class ImmutableSortedSet<E> extends ImmutableSet<E>
 
   abstract ImmutableSortedSet<E> tailSetImpl(E fromElement, boolean inclusive);
 
-  /** @since 12.0 */
+  /**
+   * @since 12.0
+   */
   @GwtIncompatible // NavigableSet
   @Override
   @CheckForNull
@@ -656,21 +664,27 @@ public abstract class ImmutableSortedSet<E> extends ImmutableSet<E>
     return Iterators.<@Nullable E>getNext(headSet(e, false).descendingIterator(), null);
   }
 
-  /** @since 12.0 */
+  /**
+   * @since 12.0
+   */
   @Override
   @CheckForNull
   public E floor(E e) {
     return Iterators.<@Nullable E>getNext(headSet(e, true).descendingIterator(), null);
   }
 
-  /** @since 12.0 */
+  /**
+   * @since 12.0
+   */
   @Override
   @CheckForNull
   public E ceiling(E e) {
     return Iterables.<@Nullable E>getFirst(tailSet(e, true), null);
   }
 
-  /** @since 12.0 */
+  /**
+   * @since 12.0
+   */
   @GwtIncompatible // NavigableSet
   @Override
   @CheckForNull
@@ -727,7 +741,9 @@ public abstract class ImmutableSortedSet<E> extends ImmutableSet<E>
   @CheckForNull
   transient ImmutableSortedSet<E> descendingSet;
 
-  /** @since 12.0 */
+  /**
+   * @since 12.0
+   */
   @GwtIncompatible // NavigableSet
   @Override
   public ImmutableSortedSet<E> descendingSet() {
@@ -746,7 +762,9 @@ public abstract class ImmutableSortedSet<E> extends ImmutableSet<E>
   @GwtIncompatible // NavigableSet
   abstract ImmutableSortedSet<E> createDescendingSet();
 
-  /** @since 12.0 */
+  /**
+   * @since 12.0
+   */
   @GwtIncompatible // NavigableSet
   @Override
   public abstract UnmodifiableIterator<E> descendingIterator();
