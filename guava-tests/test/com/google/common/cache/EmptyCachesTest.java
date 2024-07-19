@@ -39,7 +39,6 @@ import junit.framework.TestCase;
  *
  * @author mike nonemacher
  */
-
 public class EmptyCachesTest extends TestCase {
 
   public void testEmpty() {
@@ -47,7 +46,6 @@ public class EmptyCachesTest extends TestCase {
       checkEmpty(cache);
     }
   }
-
 
   public void testInvalidate_empty() {
     for (LoadingCache<Object, Object> cache : caches()) {
@@ -69,7 +67,6 @@ public class EmptyCachesTest extends TestCase {
       checkEmpty(cache);
     }
   }
-
 
   public void testEquals_null() {
     for (LoadingCache<Object, Object> cache : caches()) {
@@ -120,7 +117,6 @@ public class EmptyCachesTest extends TestCase {
           UnsupportedOperationException.class, () -> cache.asMap().keySet().addAll(asList(1, 2)));
     }
   }
-
 
   public void testKeySet_clear() {
     for (LoadingCache<Object, Object> cache : caches()) {
@@ -184,7 +180,6 @@ public class EmptyCachesTest extends TestCase {
           UnsupportedOperationException.class, () -> cache.asMap().values().addAll(asList(1, 2)));
     }
   }
-
 
   public void testValues_clear() {
     for (LoadingCache<Object, Object> cache : caches()) {
@@ -251,7 +246,6 @@ public class EmptyCachesTest extends TestCase {
           () -> cache.asMap().values().addAll(asList(entryOf(1, 1), entryOf(2, 2))));
     }
   }
-
 
   public void testEntrySet_clear() {
     for (LoadingCache<Object, Object> cache : caches()) {

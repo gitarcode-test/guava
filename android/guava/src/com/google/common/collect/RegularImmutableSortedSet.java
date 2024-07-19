@@ -54,8 +54,7 @@ final class RegularImmutableSortedSet<E> extends ImmutableSortedSet<E> {
 
   @Override
   @CheckForNull
-  @Nullable
-  Object[] internalArray() {
+  @Nullable Object[] internalArray() {
     return elements.internalArray();
   }
 

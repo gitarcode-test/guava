@@ -32,7 +32,6 @@ import junit.framework.TestCase;
 
 /** Tests for {@link AbstractFuture} with the cancellation cause system property set */
 @AndroidIncompatible // custom classloading
-
 public class AbstractFutureCancellationCauseTest extends TestCase {
 
   private ClassLoader oldClassLoader;

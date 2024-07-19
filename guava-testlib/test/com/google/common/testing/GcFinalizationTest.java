@@ -35,7 +35,6 @@ import org.checkerframework.checker.nullness.qual.Nullable;
  * @author mike nonemacher
  */
 @AndroidIncompatible // depends on details of gc
-
 public class GcFinalizationTest extends TestCase {
 
   // ----------------------------------------------------------------

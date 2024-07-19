@@ -30,7 +30,9 @@ import java.lang.ref.Reference;
 import java.util.concurrent.atomic.AtomicReferenceArray;
 import junit.framework.TestCase;
 
-/** @author Charles Fry */
+/**
+ * @author Charles Fry
+ */
 @SuppressWarnings("deprecation") // many tests of deprecated methods
 public class MapMakerInternalMapTest extends TestCase {
 

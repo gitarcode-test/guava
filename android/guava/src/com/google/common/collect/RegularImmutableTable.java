@@ -187,7 +187,9 @@ abstract class RegularImmutableTable<R, C, V> extends ImmutableTable<R, C, V> {
         : new SparseImmutableTable<R, C, V>(cellList, rowSpace, columnSpace);
   }
 
-  /** @throws IllegalArgumentException if {@code existingValue} is not null. */
+  /**
+   * @throws IllegalArgumentException if {@code existingValue} is not null.
+   */
   /*
    * We could have declared this method 'static' but the additional compile-time checks achieved by
    * referencing the type variables seem worthwhile.

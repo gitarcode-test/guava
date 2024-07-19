@@ -13,9 +13,7 @@
  */
 
 /**
- * Escapers
- * for
- * XML.
+ * Escapers for XML.
  *
  * <p>This package is a part of the open-source <a href="https://github.com/google/guava">Guava</a>
  * library.
