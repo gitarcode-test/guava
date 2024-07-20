@@ -39,7 +39,6 @@ import java.util.Arrays;
  */
 public class FileBackedOutputStreamTest extends IoTestCase {
 
-
   public void testThreshold() throws Exception {
     testThreshold(0, 100, true, false);
     testThreshold(10, 100, true, false);
@@ -97,7 +96,6 @@ public class FileBackedOutputStreamTest extends IoTestCase {
       assertFalse(file.exists());
     }
   }
-
 
   public void testThreshold_resetOnFinalize() throws Exception {
     testThreshold(0, 100, true, true);

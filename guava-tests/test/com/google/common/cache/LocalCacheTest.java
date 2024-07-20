@@ -87,7 +87,9 @@ import junit.framework.TestCase;
 import junit.framework.TestSuite;
 import org.checkerframework.checker.nullness.qual.Nullable;
 
-/** @author Charles Fry */
+/**
+ * @author Charles Fry
+ */
 @SuppressWarnings("GuardedBy") // TODO(b/35466881): Fix or suppress.
 public class LocalCacheTest extends TestCase {
   private static class TestStringCacheGenerator extends TestStringMapGenerator {
