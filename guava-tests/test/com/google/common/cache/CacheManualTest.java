@@ -20,7 +20,9 @@ import com.google.common.collect.ImmutableList;
 import com.google.common.collect.ImmutableMap;
 import junit.framework.TestCase;
 
-/** @author Charles Fry */
+/**
+ * @author Charles Fry
+ */
 public class CacheManualTest extends TestCase {
 
   public void testGetIfPresent() {

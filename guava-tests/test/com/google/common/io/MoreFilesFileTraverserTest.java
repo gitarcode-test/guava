@@ -32,7 +32,6 @@ import junit.framework.TestCase;
  *
  * @author Jens Nyman
  */
-
 public class MoreFilesFileTraverserTest extends TestCase {
 
   private Path rootDir;

@@ -234,10 +234,7 @@ public class HashingTest extends TestCase {
     assertEquals(Hashing.consistentHash(equivLong, 5555), Hashing.consistentHash(hashCode, 5555));
   }
 
-  /**
-   * Check a few "golden" values to see that implementations across languages are equivalent.
-   *
-   */
+  /** Check a few "golden" values to see that implementations across languages are equivalent. */
   public void testConsistentHash_linearCongruentialGeneratorCompatibility() {
     int[] golden100 = {
       0, 55, 62, 8, 45, 59, 86, 97, 82, 59,

@@ -25,7 +25,6 @@ import org.checkerframework.checker.nullness.qual.Nullable;
  *
  * @author Ben Yu
  */
-
 public class PackageSanityTests extends AbstractPackageSanityTests {
 
   public PackageSanityTests() throws Exception {

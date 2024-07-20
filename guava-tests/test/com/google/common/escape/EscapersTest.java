@@ -22,7 +22,9 @@ import com.google.common.escape.testing.EscaperAsserts;
 import java.io.IOException;
 import junit.framework.TestCase;
 
-/** @author David Beaumont */
+/**
+ * @author David Beaumont
+ */
 @GwtCompatible
 public class EscapersTest extends TestCase {
   public void testNullEscaper() throws IOException {

@@ -86,9 +86,7 @@ public final class MoreFiles {
     return new PathByteSource(path, options);
   }
 
-  private static final class PathByteSource extends
-      ByteSource
-  {
+  private static final class PathByteSource extends ByteSource {
 
     private static final LinkOption[] FOLLOW_LINKS = {};
 

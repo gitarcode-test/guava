@@ -611,15 +611,13 @@ public final class NullPointerTester {
     FROM_DECLARATION_AND_TYPE_USE_ANNOTATIONS {
       @Override
       boolean isNullable(Invokable<?, ?> invokable) {
-        return FROM_DECLARATION_ANNOTATIONS_ONLY.isNullable(invokable)
-        ;
+        return FROM_DECLARATION_ANNOTATIONS_ONLY.isNullable(invokable);
         // TODO(cpovirk): Should we also check isNullableTypeVariable?
       }
 
       @Override
       boolean isNullable(Parameter param) {
-        return FROM_DECLARATION_ANNOTATIONS_ONLY.isNullable(param)
-        ;
+        return FROM_DECLARATION_ANNOTATIONS_ONLY.isNullable(param);
       }
     },
     FROM_DECLARATION_ANNOTATIONS_ONLY {

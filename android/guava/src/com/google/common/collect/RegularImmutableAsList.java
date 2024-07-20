@@ -71,8 +71,7 @@ class RegularImmutableAsList<E> extends ImmutableAsList<E> {
 
   @Override
   @CheckForNull
-  @Nullable
-  Object[] internalArray() {
+  @Nullable Object[] internalArray() {
     return delegateList.internalArray();
   }
 

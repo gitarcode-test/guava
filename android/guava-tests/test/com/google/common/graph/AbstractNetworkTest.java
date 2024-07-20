@@ -56,8 +56,8 @@ import org.junit.Test;
  *   <li>Test cases related to the specific implementation of the {@link Network} interface.
  * </ul>
  *
- * TODO(user): Make this class generic (using <N, E>) for all node and edge types.
- * TODO(user): Differentiate between directed and undirected edge strings.
+ * TODO(user): Make this class generic (using <N, E>) for all node and edge types. TODO(user):
+ * Differentiate between directed and undirected edge strings.
  */
 public abstract class AbstractNetworkTest {
 

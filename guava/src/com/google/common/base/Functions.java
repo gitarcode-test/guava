@@ -296,7 +296,9 @@ public final class Functions {
     return new PredicateFunction<>(predicate);
   }
 
-  /** @see Functions#forPredicate */
+  /**
+   * @see Functions#forPredicate
+   */
   private static class PredicateFunction<T extends @Nullable Object>
       implements Function<T, Boolean>, Serializable {
     private final Predicate<T> predicate;
@@ -393,7 +395,9 @@ public final class Functions {
     return new SupplierFunction<>(supplier);
   }
 
-  /** @see Functions#forSupplier */
+  /**
+   * @see Functions#forSupplier
+   */
   private static class SupplierFunction<F extends @Nullable Object, T extends @Nullable Object>
       implements Function<F, T>, Serializable {
 

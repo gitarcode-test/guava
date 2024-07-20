@@ -162,6 +162,7 @@ public final class MediaType {
    * may be necessary in certain situations for compatibility.
    */
   public static final MediaType TEXT_JAVASCRIPT_UTF_8 = createConstantUtf8(TEXT_TYPE, "javascript");
+
   /**
    * <a href="http://www.iana.org/assignments/media-types/text/tab-separated-values">Tab separated
    * values</a>.

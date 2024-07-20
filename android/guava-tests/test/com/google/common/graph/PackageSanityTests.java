@@ -26,7 +26,6 @@ import com.google.common.testing.AbstractPackageSanityTests;
  *
  * @author Kurt Alfred Kluever
  */
-
 public class PackageSanityTests extends AbstractPackageSanityTests {
 
   private static final AbstractGraphBuilder<?> GRAPH_BUILDER_A =

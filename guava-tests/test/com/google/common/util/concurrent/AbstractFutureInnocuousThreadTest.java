@@ -16,7 +16,6 @@
 
 package com.google.common.util.concurrent;
 
-
 import java.net.URLClassLoader;
 import java.security.Permission;
 import java.util.HashMap;
@@ -29,7 +28,6 @@ import javax.annotation.concurrent.GuardedBy;
 import junit.framework.TestCase;
 
 /** Tests for {@link AbstractFuture} using an innocuous thread. */
-
 public class AbstractFutureInnocuousThreadTest extends TestCase {
   private ClassLoader oldClassLoader;
   private URLClassLoader classReloader;

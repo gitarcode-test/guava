@@ -36,7 +36,6 @@ import junit.framework.TestCase;
  *
  * @author Chris Nokleberg
  */
-
 @SuppressWarnings("deprecation") // tests of a deprecated method
 public class FilesCreateTempDirTest extends TestCase {
   public void testCreateTempDir() throws IOException {
