@@ -22,7 +22,9 @@ import com.google.common.annotations.GwtCompatible;
 import junit.framework.TestCase;
 import org.checkerframework.checker.nullness.qual.Nullable;
 
-/** @author Luiz-Otavio "Z" Zorzella */
+/**
+ * @author Luiz-Otavio "Z" Zorzella
+ */
 @GwtCompatible
 public class TearDownStackTest extends TestCase {
 

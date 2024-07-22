@@ -392,19 +392,25 @@ public abstract class AbstractScheduledService implements Service {
     return delegate.state();
   }
 
-  /** @since 13.0 */
+  /**
+   * @since 13.0
+   */
   @Override
   public final void addListener(Listener listener, Executor executor) {
     delegate.addListener(listener, executor);
   }
 
-  /** @since 14.0 */
+  /**
+   * @since 14.0
+   */
   @Override
   public final Throwable failureCause() {
     return delegate.failureCause();
   }
 
-  /** @since 15.0 */
+  /**
+   * @since 15.0
+   */
   @CanIgnoreReturnValue
   @Override
   public final Service startAsync() {
@@ -412,7 +418,9 @@ public abstract class AbstractScheduledService implements Service {
     return this;
   }
 
-  /** @since 15.0 */
+  /**
+   * @since 15.0
+   */
   @CanIgnoreReturnValue
   @Override
   public final Service stopAsync() {
@@ -420,25 +428,33 @@ public abstract class AbstractScheduledService implements Service {
     return this;
   }
 
-  /** @since 15.0 */
+  /**
+   * @since 15.0
+   */
   @Override
   public final void awaitRunning() {
     delegate.awaitRunning();
   }
 
-  /** @since 15.0 */
+  /**
+   * @since 15.0
+   */
   @Override
   public final void awaitRunning(long timeout, TimeUnit unit) throws TimeoutException {
     delegate.awaitRunning(timeout, unit);
   }
 
-  /** @since 15.0 */
+  /**
+   * @since 15.0
+   */
   @Override
   public final void awaitTerminated() {
     delegate.awaitTerminated();
   }
 
-  /** @since 15.0 */
+  /**
+   * @since 15.0
+   */
   @Override
   public final void awaitTerminated(long timeout, TimeUnit unit) throws TimeoutException {
     delegate.awaitTerminated(timeout, unit);

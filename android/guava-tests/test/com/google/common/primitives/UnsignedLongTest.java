@@ -103,7 +103,6 @@ public class UnsignedLongTest extends TestCase {
     }
   }
 
-
   public void testValueOfBigInteger() {
     BigInteger min = BigInteger.ZERO;
     BigInteger max = UnsignedLong.MAX_VALUE.bigIntegerValue();

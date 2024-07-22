@@ -29,7 +29,6 @@ import org.junit.runners.JUnit4;
 
 /** Tests for repeated node and edge addition and removal in a {@link Network}. */
 @RunWith(JUnit4.class)
-
 public final class NetworkMutationTest {
   private static final int NUM_TRIALS = 5;
   private static final int NUM_NODES = 20;

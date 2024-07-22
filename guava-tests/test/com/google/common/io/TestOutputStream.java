@@ -27,7 +27,9 @@ import java.io.IOException;
 import java.io.OutputStream;
 import java.util.Arrays;
 
-/** @author Colin Decker */
+/**
+ * @author Colin Decker
+ */
 public class TestOutputStream extends FilterOutputStream {
 
   private final ImmutableSet<TestOption> options;

@@ -20,7 +20,9 @@ import jsinterop.annotations.JsMethod;
 import jsinterop.annotations.JsPackage;
 import org.checkerframework.checker.nullness.qual.Nullable;
 
-/** @author Jesse Wilson */
+/**
+ * @author Jesse Wilson
+ */
 final class Platform {
   static CharMatcher precomputeCharMatcher(CharMatcher matcher) {
     // CharMatcher.precomputed() produces CharMatchers that are maybe a little

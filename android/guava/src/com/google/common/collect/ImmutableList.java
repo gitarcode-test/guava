@@ -472,8 +472,7 @@ public abstract class ImmutableList<E> extends ImmutableCollection<E>
 
     @Override
     @CheckForNull
-    @Nullable
-    Object[] internalArray() {
+    @Nullable Object[] internalArray() {
       return ImmutableList.this.internalArray();
     }
 

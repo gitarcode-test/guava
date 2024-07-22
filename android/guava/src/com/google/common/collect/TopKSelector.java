@@ -54,8 +54,7 @@ import org.checkerframework.checker.nullness.qual.Nullable;
  */
 @GwtCompatible
 @ElementTypesAreNonnullByDefault
-final class TopKSelector<
-    T extends @Nullable Object> {
+final class TopKSelector<T extends @Nullable Object> {
 
   /**
    * Returns a {@code TopKSelector} that collects the lowest {@code k} elements added to it,
