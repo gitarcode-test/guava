@@ -38,7 +38,6 @@ import junit.framework.TestSuite;
  *
  * @author Chris Nokleberg
  */
-
 public class ResourcesTest extends IoTestCase {
 
   @AndroidIncompatible // wouldn't run anyway, but strip the source entirely because of b/230620681

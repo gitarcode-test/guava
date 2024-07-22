@@ -571,9 +571,7 @@ public abstract class ByteSource {
     }
   }
 
-  private static class ByteArrayByteSource extends
-      ByteSource
-  {
+  private static class ByteArrayByteSource extends ByteSource {
 
     final byte[] bytes;
     final int offset;

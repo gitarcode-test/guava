@@ -21,7 +21,9 @@ import com.google.common.collect.ImmutableMap;
 import java.util.Map;
 import junit.framework.TestCase;
 
-/** @author David Beaumont */
+/**
+ * @author David Beaumont
+ */
 @GwtCompatible
 public class ArrayBasedEscaperMapTest extends TestCase {
   public void testNullMap() {

@@ -52,7 +52,6 @@ import junit.framework.TestSuite;
  *
  * @author Chris Nokleberg
  */
-
 public class FilesTest extends IoTestCase {
 
   @AndroidIncompatible // suites, ByteSourceTester (b/230620681)

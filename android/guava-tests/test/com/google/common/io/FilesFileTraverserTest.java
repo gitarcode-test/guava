@@ -28,7 +28,6 @@ import java.io.IOException;
  *
  * @author Jens Nyman
  */
-
 public class FilesFileTraverserTest extends IoTestCase {
 
   private File rootDir;

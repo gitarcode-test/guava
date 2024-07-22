@@ -27,7 +27,6 @@ import java.nio.charset.CharsetEncoder;
  *
  * @author Ben Yu
  */
-
 public class PackageSanityTests extends AbstractPackageSanityTests {
   public PackageSanityTests() {
     setDefault(BaseEncoding.class, BaseEncoding.base64());
