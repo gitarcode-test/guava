@@ -1375,7 +1375,6 @@ public final class ClosingFuture<V extends @Nullable Object> {
           : Futures.whenAllComplete(inputFutures());
     }
 
-
     private ImmutableList<FluentFuture<?>> inputFutures() {
       return FluentIterable.from(inputs)
           .<FluentFuture<?>>transform(future -> future.future)

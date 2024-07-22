@@ -120,8 +120,7 @@ public final class Suppliers {
 
   @VisibleForTesting
   static class MemoizingSupplier<T extends @Nullable Object> implements Supplier<T>, Serializable {
-    private final Object lock =
-        new Integer(1); // something serializable
+    private final Object lock = new Integer(1); // something serializable
 
     final Supplier<T> delegate;
     transient volatile boolean initialized;
@@ -275,8 +274,7 @@ public final class Suppliers {
   @SuppressWarnings("GoodTime") // lots of violations
   static class ExpiringMemoizingSupplier<T extends @Nullable Object>
       implements Supplier<T>, Serializable {
-    private final Object lock =
-        new Integer(1); // something serializable
+    private final Object lock = new Integer(1); // something serializable
 
     final Supplier<T> delegate;
     final long durationNanos;

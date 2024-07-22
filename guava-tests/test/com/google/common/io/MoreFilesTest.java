@@ -55,7 +55,6 @@ import junit.framework.TestSuite;
  *
  * @author Colin Decker
  */
-
 public class MoreFilesTest extends TestCase {
 
   public static TestSuite suite() {

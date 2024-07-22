@@ -421,7 +421,6 @@ public class AbstractFutureTest extends TestCase {
    * He did the bash, he did the future bash The future bash, it was a concurrency smash He did the
    * bash, it caught on in a flash He did the bash, he did the future bash
    */
-
   public void testFutureBash() {
     if (isWindows()) {
       return; // TODO: b/136041958 - Running very slowly on Windows CI.
