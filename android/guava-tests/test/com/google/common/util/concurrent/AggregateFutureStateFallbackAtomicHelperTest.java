@@ -44,7 +44,6 @@ import junit.framework.TestSuite;
  * platform classes unavailable. Then we construct a test suite so we can run the normal FuturesTest
  * test methods in these degenerate classloaders.
  */
-
 public class AggregateFutureStateFallbackAtomicHelperTest extends TestCase {
 
   /**

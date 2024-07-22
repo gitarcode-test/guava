@@ -116,7 +116,6 @@ public class FakeTickerTest extends TestCase {
   }
 
   @GwtIncompatible // concurrency
-
   public void testConcurrentAdvance() throws Exception {
     final FakeTicker ticker = new FakeTicker();
 
@@ -138,7 +137,6 @@ public class FakeTickerTest extends TestCase {
   }
 
   @GwtIncompatible // concurrency
-
   public void testConcurrentAutoIncrementStep() throws Exception {
     int incrementByNanos = 3;
     final FakeTicker ticker =

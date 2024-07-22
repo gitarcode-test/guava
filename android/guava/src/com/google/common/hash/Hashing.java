@@ -208,8 +208,7 @@ public final class Hashing {
    *     despite its deprecation. But if you can choose your hash function, avoid MD5, which is
    *     neither fast nor secure. As of January 2017, we suggest:
    *     <ul>
-   *       <li>For security:
-   *           {@link Hashing#sha256} or a higher-level API.
+   *       <li>For security: {@link Hashing#sha256} or a higher-level API.
    *       <li>For speed: {@link Hashing#goodFastHash}, though see its docs for caveats.
    *     </ul>
    */
@@ -229,8 +228,7 @@ public final class Hashing {
    *     despite its deprecation. But if you can choose your hash function, avoid SHA-1, which is
    *     neither fast nor secure. As of January 2017, we suggest:
    *     <ul>
-   *       <li>For security:
-   *           {@link Hashing#sha256} or a higher-level API.
+   *       <li>For security: {@link Hashing#sha256} or a higher-level API.
    *       <li>For speed: {@link Hashing#goodFastHash}, though see its docs for caveats.
    *     </ul>
    */

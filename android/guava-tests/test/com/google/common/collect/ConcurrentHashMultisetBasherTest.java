@@ -39,7 +39,6 @@ import junit.framework.TestCase;
  *
  * @author mike nonemacher
  */
-
 public class ConcurrentHashMultisetBasherTest extends TestCase {
 
   public void testAddAndRemove_ConcurrentHashMap() throws Exception {

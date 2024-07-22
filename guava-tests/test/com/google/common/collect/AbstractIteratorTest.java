@@ -138,7 +138,6 @@ public class AbstractIteratorTest extends TestCase {
     }
   }
 
-
   @J2ktIncompatible // weak references, details of GC
   @GwtIncompatible // weak references
   @AndroidIncompatible // depends on details of GC

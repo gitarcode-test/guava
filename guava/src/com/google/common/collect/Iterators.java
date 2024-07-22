@@ -635,8 +635,7 @@ public final class Iterators {
           throw new NoSuchElementException();
         }
         @SuppressWarnings("unchecked") // we only put Ts in it
-        @Nullable
-        T[] array = (@Nullable T[]) new Object[size];
+        @Nullable T[] array = (@Nullable T[]) new Object[size];
         int count = 0;
         for (; count < size && iterator.hasNext(); count++) {
           array[count] = iterator.next();
