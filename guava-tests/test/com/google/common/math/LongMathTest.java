@@ -116,9 +116,9 @@ public class LongMathTest extends TestCase {
   @GwtIncompatible // TODO
   public void testConstantMaxPowerOfSqrt2Unsigned() {
     assertEquals(
-        /*expected=*/ BigIntegerMath.sqrt(BigInteger.ZERO.setBit(2 * Long.SIZE - 1), FLOOR)
+        /* expected= */ BigIntegerMath.sqrt(BigInteger.ZERO.setBit(2 * Long.SIZE - 1), FLOOR)
             .longValue(),
-        /*actual=*/ LongMath.MAX_POWER_OF_SQRT2_UNSIGNED);
+        /* actual= */ LongMath.MAX_POWER_OF_SQRT2_UNSIGNED);
   }
 
   @GwtIncompatible // BigIntegerMath // TODO(cpovirk): GWT-enable BigIntegerMath
@@ -157,8 +157,8 @@ public class LongMathTest extends TestCase {
   @GwtIncompatible // TODO
   public void testConstantsSqrtMaxLong() {
     assertEquals(
-        /*expected=*/ LongMath.sqrt(Long.MAX_VALUE, FLOOR),
-        /*actual=*/ LongMath.FLOOR_SQRT_MAX_LONG);
+        /* expected= */ LongMath.sqrt(Long.MAX_VALUE, FLOOR),
+        /* actual= */ LongMath.FLOOR_SQRT_MAX_LONG);
   }
 
   @GwtIncompatible // TODO
@@ -748,7 +748,6 @@ public class LongMathTest extends TestCase {
     }
   }
 
-
   @GwtIncompatible // Slow
   public void testBinomial_exhaustiveNotOverflowing() {
     // Tests all of the inputs to LongMath.binomial that won't cause it to overflow, that weren't
@@ -784,7 +783,6 @@ public class LongMathTest extends TestCase {
       }
     }
   }
-
 
   @J2ktIncompatible // slow enough to cause flakiness
   @GwtIncompatible // far too slow

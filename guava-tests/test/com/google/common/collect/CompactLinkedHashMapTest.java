@@ -200,5 +200,4 @@ public class CompactLinkedHashMapTest extends TestCase {
       assertThat(map.links).hasLength(expectedSize);
     }
   }
-
 }

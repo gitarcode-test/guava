@@ -119,9 +119,7 @@ class CompactHashMap<K extends @Nullable Object, V extends @Nullable Object>
    * Maximum allowed false positive probability of detecting a hash flooding attack given random
    * input.
    */
-  @VisibleForTesting(
-      )
-  static final double HASH_FLOODING_FPP = 0.001;
+  @VisibleForTesting() static final double HASH_FLOODING_FPP = 0.001;
 
   /**
    * Maximum allowed length of a hash table bucket before falling back to a j.u.LinkedHashMap-based

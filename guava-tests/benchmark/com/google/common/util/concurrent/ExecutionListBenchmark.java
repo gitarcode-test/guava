@@ -55,6 +55,7 @@ public class ExecutionListBenchmark {
     void add(Runnable runnable, Executor executor);
 
     void execute();
+
     /** Returns the underlying implementation, useful for the Footprint benchmark. */
     Object getImpl();
   }

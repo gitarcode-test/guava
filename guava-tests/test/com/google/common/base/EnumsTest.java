@@ -79,7 +79,6 @@ public class EnumsTest extends TestCase {
     assertThat(Enums.getIfPresent(TestEnum.class, "WOMBAT")).isAbsent();
   }
 
-
   @J2ktIncompatible
   @GwtIncompatible // weak references
   @AndroidIncompatible // depends on details of GC and classloading
