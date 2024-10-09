@@ -83,9 +83,7 @@ final class JdkBackedImmutableMultiset<E> extends ImmutableMultiset<E> {
   }
 
   @Override
-  boolean isPartialView() {
-    return false;
-  }
+  boolean isPartialView() { return false; }
 
   @Override
   public int size() {
